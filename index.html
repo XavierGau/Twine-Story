@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Digital Writing Story Plan.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Digital Writing Story Plan" startnode="1" creator="Twine" creator-version="2.3.14" ifid="5836BF72-DD1F-4775-BFE7-6EE2F32D6798" zoom="1" format="Harlowe" format-version="3.2.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start 1" tags="" position="890,42" size="200,100">They are asking you, someone with no training or experience, to be responsible for the life of the person in that building. You are a nobody, you didn’t ask to be here, in fact you were told you had to be. If you left, you would be &#39;the reason for that person’s fucking death,&#39; the officer had said to you.  
+<tw-storydata name="Digital Writing Story Plan" startnode="1" creator="Twine" creator-version="2.3.14" ifid="5836BF72-DD1F-4775-BFE7-6EE2F32D6798" zoom="1" format="Harlowe" format-version="3.2.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start 1" tags="" position="890,42" size="200,100">(b4r:&quot;double&quot;)+(b4r-colour:grey)[They are asking you, someone with no training or experience, to be responsible for the life of the person in that building. You are a nobody, you didn’t ask to be here, in fact you were told you had to be. If you left, you would be &#39;the reason for that person’s fucking death,&#39; the officer had said to you.  
 
 You were only doing your job, working at the register of a petrol station a hundred kilometres from the nearest town. Truckers and farmers passed through regularly, but not much else. Before today, the most eventful moment you had experienced working here was farmer Wilson’s cattle dog breaking free from his leash on the tray of his ute.  
 
@@ -33,8 +33,10 @@ You must negotiate the safe release of the hostage, in person.
 
 You:
 [[Go by yourself]]
+
 [[Ask to bring an officer with you]] 
-[[Hide a gun in your jacket]]</tw-passagedata><tw-passagedata pid="2" name="Go by yourself" tags="" position="582,224" size="100,100">You go by yourself. Scared, but knowing that the truck driver was more so, and not going by yourself would only make the situation worse for him.
+
+[[Hide a gun in your jacket]]]</tw-passagedata><tw-passagedata pid="2" name="Go by yourself" tags="" position="582,224" size="100,100">You go by yourself. Scared, but knowing that the truck driver was more so, and not going by yourself would only make the situation worse for him.
 
 As you approach the station, you feel your knees buckling. The weight of what you&#39;re about to do hits you like the truck that is still parked outside.
 
@@ -42,7 +44,9 @@ As you approach the station, you feel your knees buckling. The weight of what yo
 
 You: 
 [[Ask for their name]]
+
 [[Ask about their parents]]
+
 [[Tell them to stop]] </tw-passagedata><tw-passagedata pid="3" name="Ask to bring an officer with you" tags="" position="917,211" size="100,100">You ask for an officer to accompany you. It&#39;s not perfect, you won&#39;t be safe just because you have an officer with you, but it&#39;s enough to make you feel more safe. Maybe she&#39;ll make him think twice before trying something.
 
 As you approach the station, you feel your knees buckling. The weight of what you&#39;re about to do hits you like the truck that is still parked outside.
@@ -51,7 +55,9 @@ As you approach the station, you feel your knees buckling. The weight of what yo
 
 You:
 [[Tell them to stop]]
+
 [[Ask what they want]]
+
 [[Tell them you have the upper hand]]</tw-passagedata><tw-passagedata pid="4" name="Hide a gun in your jacket" tags="" position="1228,175" size="100,100">You see the back of the S.W.A.T. van open, a handgun within sight. If you&#39;re going this close to an active shooter, as a civilian, you should have some means to defend yourself. You take it quickly, not giving yourself any more time to think about it.
 
 As you approach the station, you feel your knees buckling. The weight of what you&#39;re about to do hits you like the truck that is still parked outside.
@@ -78,6 +84,10 @@ You:
 
 [[&quot;Who is Henry?&quot;-&gt;Option 11 - Success]] </tw-passagedata><tw-passagedata pid="7" name="Tell them to stop" tags="" position="806,448" size="100,100">You look at him in the eyes, judging his character, his demeanour. He looks even more tired than when he had walked into the station. His eyes are bloodshot and his face is flushed.
 
+(if:(history: where its name contains &quot;Ask to bring an officer with you&quot;)&#39;s length is 1)[&quot;I need everyone to listen! I need you all to listen! Why did you bring the pig? I asked for you. Why the fuck is she here? I&#39;m not talking with her.&quot; 
+
+You tell the officer to go back with everyone else. She reluctantly agrees, knowing that you don&#39;t have much of a choice.]
+
 You don&#39;t know what else to say, so you just say it.
 
 &quot;You need to stop. You need to let him go. You&#39;re just making things worse for yourself,&quot; you tell him.
@@ -88,15 +98,21 @@ You don&#39;t know what else to say, so you just say it.
 
 &quot;What do you want? What is all this for?&quot; You ask.
 
-&quot;I need everyone to listen! I need you all to listen! Why did you bring the pig? I asked for you. Why the fuck is she here?&quot;
+&quot;I need everyone to listen! I need you all to listen! Why did you bring the pig? I asked for you. Why the fuck is she here? I&#39;m not talking with her.&quot; 
 
-[[&quot;Please. We&#39;re trying to help. Tell us what you&#39;re after so we can help you, mate.&quot; You say. -&gt;Option 11 Success 2]]</tw-passagedata><tw-passagedata pid="9" name="Tell them you have the upper hand" tags="" position="1259,388.6666666666667" size="100,100">You look at him in the eyes, judging his character, his demeanour. He looks even more tired than when he had walked into the station. His eyes are bloodshot and his face is flushed.
+You tell the officer to go back with everyone else. She reluctantly agrees, knowing that you don&#39;t have much of a choice.
+
+[[&quot;Please. I&#39;m trying to help. Tell me what you&#39;re after so I can help you, mate.&quot; You say. -&gt;Option 11 Success 2]]</tw-passagedata><tw-passagedata pid="9" name="Tell them you have the upper hand" tags="" position="1259,388.6666666666667" size="100,100">You look at him in the eyes, judging his character, his demeanour. He looks even more tired than when he had walked into the station. His eyes are bloodshot and his face is flushed.
+
+(if:(history: where its name contains &quot;Ask to bring an officer with you&quot;)&#39;s length is 1)[&quot;I need everyone to listen! I need you all to listen! Why did you bring the pig? I asked for you. Why the fuck is she here? I&#39;m not talking with her.&quot; 
+
+You tell the officer to go back with everyone else. She reluctantly agrees, knowing that you don&#39;t have much of a choice.]
 
 You realise that the only way to make him stop is to make him feel hopeless, that there is no way to win. You have the upper hand and it&#39;s about time you tell him that.
 
 [[&quot;Tell me what you want, you&#39;re not going to be able to keep this up for long.&quot;-&gt;Option 11 Success 2]]</tw-passagedata><tw-passagedata pid="10" name="Take your gun out and point it at them" tags="" position="1861.6666666666667,302.3333333333333" size="100,100">You look at him in the eyes, judging his character, his demeanour. He looks even more tired than when he had walked into the station. His eyes are bloodshot and his face is flushed.
 
-You reach into your jacket and pull out the gun. Before you can even raise the gun towards the window, a shot rings out from the station. You see for a second, the look of utter shock on the face of the man. He looks down at the ground, and immediately another deafening bang pierces your ears. The man collapses to the ground after raising the gun to his own head. </tw-passagedata><tw-passagedata pid="11" name="Option 11 - Success" tags="" position="499,671" size="100,100">&quot;My brother... Henry... He needs to come back.&quot;
+You reach into your jacket and pull out the gun. Before you can even raise the gun towards the window, a shot rings out from the station. You see for a second, the look of utter shock on the face of the man. He looks down at the ground, and immediately another deafening bang pierces your ears. The man collapses to the ground after raising the gun to his own head. (enchant:?passage,(background:(gradient: 0, 0,#000000,0.476,(hsl:0,0.8039,0.5,0.6),1,#000000)))</tw-passagedata><tw-passagedata pid="11" name="Option 11 - Success" tags="" position="499,671" size="100,100">&quot;My brother... Henry... He needs to come back.&quot;
 
 &quot;Where is he?&quot; You ask.
 
@@ -107,7 +123,8 @@ You reach into your jacket and pull out the gun. Before you can even raise the g
 &quot;I want... I want him home. Mum&#39;s gone, man. He was meant to be here, she wanted to see him. There&#39;s nothing left.&quot;
 
 [[&quot;I can try to help. We&#39;re in this together. I&#39;ll talk to them about it, see what they can do help us out, okay?&quot;-&gt;Tell them you will have to talk to your superior]]
-[[&quot;I&#39;ll get him released, you&#39;ve got it.&quot;-&gt;Accept their offer]]</tw-passagedata><tw-passagedata pid="12" name="Option 11 Success 2" tags="" position="1274,599" size="100,100">&quot;I want my brother released. Go make it happen or this fuck dies. Got it?&quot; He says.
+
+[[&quot;I&#39;ll get him released, you&#39;ve got it.&quot;-&gt;Accept their offer]]</tw-passagedata><tw-passagedata pid="12" name="Option 11 Success 2" tags="" position="1274,598" size="100,100">&quot;I want my brother released. Go make it happen or this fuck dies. Got it?&quot; He says.
 
 &quot;Who&#39;s your brother? Is he in prison?&quot;
 
@@ -115,6 +132,7 @@ You reach into your jacket and pull out the gun. Before you can even raise the g
 
 You:
 [[Tell them you will see what you can do]] 
+
 [[Reject the offer]]</tw-passagedata><tw-passagedata pid="13" name="Tell them you will have to talk to your superior" tags="" position="415,855" size="100,100">You see him relax. He looks relieved, like things are finally starting to work for him.
 
 &quot;And they&#39;ll get it done?&quot; He asks.
@@ -131,15 +149,52 @@ The officers tell you that it will take time to get his brother here and you nee
 You feel the sun burning your neck as you stand outside the station again, trying to think of what to tell him. You weren&#39;t even sure the truck driver was still alive, he could have killed him with one of the knives in the station and you&#39;d have no idea.
 
 [[&quot;They&#39;ve got Henry back there already, they want to do a trade. Does that sound okay?&quot;-&gt;They don&#39;t believe you]]
-[[&quot;They&#39;re getting Henry, it&#39;s going to take some time to find him though. Can I see him, to make sure he&#39;s alright?&quot;-&gt;They are uncertain]]</tw-passagedata><tw-passagedata pid="15" name="Tell them you will see what you can do" tags="" position="1138.3333333333335,775" size="100,100">You rush off to the officers, trying to explain the situation as quickly as possible so you can get back to him. Each second you spent here was an extra second he had to panic over there. 
+
+[[&quot;They&#39;re getting Henry, it&#39;s going to take some time to find him though. Can I see him, to make sure he&#39;s alright?&quot;-&gt;They are uncertain]]</tw-passagedata><tw-passagedata pid="15" name="Tell them you will see what you can do" tags="" position="1137.3333333333335,775" size="100,100">You rush off to the officers, trying to explain the situation as quickly as possible so you can get back to him. Each second you spent here was an extra second he had to panic over there. 
 
 You feel the sun burning your neck as you stand outside the station again, trying to think of what to tell him. You weren&#39;t even sure the truck driver was still alive, he could have killed him with one of the knives in the station and you&#39;d have no idea.
 
 [[&quot;They&#39;re getting Henry, it&#39;s going to take some time to find him though. Can I see him, to make sure he&#39;s alright?&quot;-&gt;They are uncertain]]
-[[&quot;They&#39;ve got Henry back there already, they want to do a trade. Does that sound okay?&quot;-&gt;They don&#39;t believe you]] 
-[[&quot;They can&#39;t release Henry. I tried to tell them, but they won&#39;t listen to me. You need to put your gun down or they&#39;re going to shoot you. This has gone too far.&quot; -&gt;Option 19]]</tw-passagedata><tw-passagedata pid="16" name="Reject the offer" tags="" position="1680.3333333333333,774" size="100,100">[[They don&#39;t believe you]] [[Option 19]]
 
-Option 18 is changing the subject and getting the hostage taker to forget about what you just said</tw-passagedata><tw-passagedata pid="17" name="They believe you" tags="" position="459,1120" size="100,100">[[Option 20]]</tw-passagedata><tw-passagedata pid="18" name="They are uncertain" tags="" position="849.3333333333334,1086" size="100,100">[[Option 20]]</tw-passagedata><tw-passagedata pid="19" name="They don&#39;t believe you" tags="" position="1197,1117" size="100,100">[[Option 20]]</tw-passagedata><tw-passagedata pid="20" name="Option 19" tags="" position="1797,1176" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="21" name="Option 20" tags="" position="940,1357" size="100,200">The end lol</tw-passagedata></tw-storydata>
+[[&quot;They can&#39;t release Henry. I tried to tell them, but they won&#39;t listen to me. You need to put your gun down or they&#39;re going to shoot you. This has gone too far.&quot; -&gt;Option 19]]</tw-passagedata><tw-passagedata pid="16" name="Reject the offer" tags="" position="1674.3333333333333,779" size="100,100">&quot;You know I can&#39;t do that. There&#39;s no way they&#39;ll listen to me,&quot; you say. 
+
+His demeanor changes completely, for a second it looks almost hopeless. His shoulders relax and he looks to the side. You can see him losing touch with reality. Something triggers in him and he snaps back to you, shooting at you. Two shots hit the concrete next to you and one cuts into you lower leg. 
+
+[[Find cover-&gt;Option 19]]</tw-passagedata><tw-passagedata pid="17" name="They believe you" tags="" position="461,1120" size="100,100">He reaches up to his face and pulls his hood back. His eyes are full of tears, emptying themselves onto his cheeks. 
+
+&quot;He&#39;s coming home?&quot; He asks. He sounds almost like a child, a voice of relief. 
+
+&quot;He is,&quot; you respond.
+
+(if:(history: where its name contains &quot;Ask for their name&quot;)&#39;s length is 1)[Laurence disappears behind the wall, away from the window. Before long, the truck driver walks out the front door, his hands held above his head. The S.W.A.T. team instruct you to move back while they force the hostage onto the floor. Soon they enter the station and arrest him. He goes willingly with the police. You never find out if he saw Henry.]
+
+(if:(history: where its name contains &quot;Ask about their parents&quot;)&#39;s length is 1)[He disappears behind the wall, away from the window. Before long, the truck driver walks out the front door, his hands held above his head. The S.W.A.T. team instruct you to move back while they force the hostage onto the floor. Soon they enter the station and arrest him. He goes willingly with the police. You never find out if he saw Henry.]
+
+(enchant:?passage,(background:(gradient: 0, 0,#000000,0.476,(hsl:120,0.8039,0.5,0.6),1,#000000)))</tw-passagedata><tw-passagedata pid="18" name="They are uncertain" tags="" position="849.3333333333334,1086" size="100,100">He gestures toward the ground. You see the truck driver stand up from the ground, he looks unharmed. Before long, he&#39;s told to lie back down on the ground.
+
+&quot;Now, bring me Henry. I&#39;m not moving until he&#39;s here,&quot; he tells you. &quot;Go tell them.&quot;
+
+You back up towards the police cars(if:(history: where its name contains &quot;Accept their offer&quot;)&#39;s length is 1)[ again], keeping your eyes on him as you do. They tell you that they are confident to breach now that they know where the hostage is, and that you did you job well.
+
+You are instructed to stand back as the S.W.A.T. team push behind the station. You hear screaming from the building as tear gas fills it to the brim. 
+
+You hear over the radio that the hostage and the man are subdued, everything went well. 
+
+You feel the relief of everyone around you. You stand there, still in shock about the whole situation. It feels surreal and you&#39;re not sure that will ever change.
+(enchant:?passage,(background:(gradient: 0, 0,#000000,0.476,(hsl:120,0.8039,0.5,0.6),1,#000000)))</tw-passagedata><tw-passagedata pid="19" name="They don&#39;t believe you" tags="" position="1183,1119" size="100,100">His demeanor changes completely, for a second it looks almost hopeless. His shoulders relax and he looks to the side. You can see him losing touch with reality. Something triggers in him and he snaps back to you, shooting at you. Two shots hit the concrete next to you and one cuts into you lower leg. 
+
+[[Find cover-&gt;Option 19]]</tw-passagedata><tw-passagedata pid="20" name="Option 19" tags="" position="1674,1380" size="100,100">(if:(history: where its name contains &quot;Reject the offer&quot;)&#39;s length is 1)[You dive behind the nearby pumps for cover. As you&#39;re lying there, you see the S.W.A.T. unit push into the station, but more shots come from inside before they reach it.]
+
+(if:(history: where its name contains &quot;Tell them you will see what you can do&quot;)&#39;s length is 1)[&quot;What the fuck is the point? I have nothing...&quot; He says.
+
+His demeanor changes completely, for a second it looks almost hopeless. His shoulders relax and he looks to the side. You can see him losing touch with reality. Something triggers in him and he snaps back to you, shooting at you. Two shots hit the concrete next to you and one cuts into you lower leg.
+
+You dive behind the nearby pumps for cover. As you&#39;re lying there, you see the S.W.A.T. unit push into the station, but more shots come from inside before they reach it]
+
+(if:(history: where its name contains &quot;They don&#39;t believe you&quot;)&#39;s length is 1)[You dive behind the nearby pumps for cover. As you&#39;re lying there, you see the S.W.A.T. unit push into the station, but more shots come from inside before they reach it.]
+
+You lie there for what feels like hours, but what ended up only being minutes. Your eyes penetrate the sun&#39;s judgement, gazing into the pain. There are no more shots and no arrests are made. 
+(enchant:?passage,(background:(gradient: 0, 0,#000000,0.476,(hsl:0,0.8039,0.5,0.6),1,#000000)))</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
